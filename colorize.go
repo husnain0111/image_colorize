@@ -29,9 +29,7 @@ func main() {
 	size := img.Bounds().Size()
 	rect := image.Rect(0, 0, size.X, size.Y)
 	wImg := image.NewRGBA(rect)
-	// loop though all the x
 	for x := 0; x < size.X; x++ {
-		// and now loop thorough all of this x's y
 		for y := 0; y < size.Y; y++ {
 			pixel := img.At(x, y)
 			originalColor := color.RGBAModel.Convert(pixel).(color.RGBA)

@@ -13,7 +13,7 @@ func init() {
 	image.RegisterFormat("jpeg", "jpeg", jpeg.Decode, jpeg.DecodeConfig)
 }
 
-func main() {
+func maind() {
 	imgfile, err := os.Open("test_image.jpg")
 
 	if err != nil {
